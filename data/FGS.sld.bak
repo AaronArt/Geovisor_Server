@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:UserStyle xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc">
+  <sld:Name>AtlasStyler 1.9</sld:Name>
+  <sld:Title/>
+  <sld:FeatureTypeStyle>
+    <sld:Name>SINGLE_SYMBOL_POLYGON</sld:Name>
+    <sld:Title>SinglePolygonSymbolRuleList</sld:Title>
+    <sld:FeatureTypeName>Feature</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:Title>default{FGS.shp}</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>1</ogc:Literal>
+            <ogc:Literal>1</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill/>
+        <sld:Stroke/>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+  </sld:FeatureTypeStyle>
+  <sld:FeatureTypeStyle>
+    <sld:Name>UNIQUE_VALUE_POLYGON</sld:Name>
+    <sld:Title>UniqueValuesPolygonRuleList</sld:Title>
+    <sld:FeatureTypeName>Feature</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:Title>Ampudia</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Ampudia</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#8DD3C7</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Chimborazo</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Chimborazo</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#FFFFB3</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>DepEsitos de terrazas aluviales</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>DepEsitos de terrazas aluviales</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#BEBADA</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos aluviales</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos aluviales</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#9DC0D5</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos coluviales</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos coluviales</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#80B1D3</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos coluvioaluviales</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos coluvioaluviales</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#E6B177</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de abanicos aluviales</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de abanicos aluviales</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#95F7FF</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de flujo de escombros</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de flujo de escombros</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#D59D61</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de terrazas aluviales Qt</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de terrazas aluviales Qt</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#999999</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de terrazas aluviales Qt1</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de terrazas aluviales Qt1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#999999</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de terrazas aluviales Qt2</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de terrazas aluviales Qt2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#999999</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de terrazas aluviales Qt3</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de terrazas aluviales Qt3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#999999</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos de terrazas aluviales Qt4</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos de terrazas aluviales Qt4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#666666</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Depositos escombreras de mineria</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Depositos escombreras de mineria</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#7E7E68</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Formacion Ferreira</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Formacion Ferreira</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#96119B</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Formacion Guachinte</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Formacion Guachinte</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#C3D809</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Formacion cono de Terron colorado</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Formacion cono de Terron colorado</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#A1580A</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Rellenos antropicos</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Rellenos antropicos</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#947E66</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Rocas diabasicas</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Rocas diabasicas</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#83a940</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+    <sld:Rule>
+      <sld:Title>Stock de Pance</sld:Title>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:Not>
+              <ogc:Or>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+                  <ogc:Literal></ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
+            </ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>TIPO_FGS</ogc:PropertyName>
+              <ogc:Literal>Stock de Pance</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.0E20</sld:MaxScaleDenominator>
+      <sld:PolygonSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#FF6666</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.6</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke-opacity">0.10000000149011612</sld:CssParameter>
+          <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+  </sld:FeatureTypeStyle>
+  <sld:FeatureTypeStyle>
+    <sld:Name>TEXT_LABEL</sld:Name>
+    <sld:Title>TextRuleList</sld:Title>
+    <sld:FeatureTypeName>Feature</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:Name>DEFAULT</sld:Name>
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+            <ogc:Literal>ALL_LABEL_CLASSES_ENABLED</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:Literal>LABEL_CLASS_ENABLED</ogc:Literal>
+              <ogc:Literal>LABEL_CLASS_ENABLED</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:Literal>1</ogc:Literal>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:And>
+      </ogc:Filter>
+      <sld:MaxScaleDenominator>1.7976931348623157E308</sld:MaxScaleDenominator>
+      <sld:TextSymbolizer>
+        <sld:Geometry>
+          <ogc:PropertyName>the_geom</ogc:PropertyName>
+        </sld:Geometry>
+        <sld:Label>
+          <ogc:PropertyName>CODIGO</ogc:PropertyName>
+        </sld:Label>
+        <sld:Font>
+          <sld:CssParameter name="font-family">Arial</sld:CssParameter>
+          <sld:CssParameter name="font-size">7.0</sld:CssParameter>
+          <sld:CssParameter name="font-style">oblique</sld:CssParameter>
+          <sld:CssParameter name="font-weight">bold</sld:CssParameter>
+        </sld:Font>
+        <sld:LabelPlacement>
+          <sld:PointPlacement>
+            <sld:AnchorPoint>
+              <sld:AnchorPointX>
+                <ogc:Literal>0.5</ogc:Literal>
+              </sld:AnchorPointX>
+              <sld:AnchorPointY>
+                <ogc:Literal>0.5</ogc:Literal>
+              </sld:AnchorPointY>
+            </sld:AnchorPoint>
+            <sld:Displacement>
+              <sld:DisplacementX>
+                <ogc:Literal>0.0</ogc:Literal>
+              </sld:DisplacementX>
+              <sld:DisplacementY>
+                <ogc:Literal>0.0</ogc:Literal>
+              </sld:DisplacementY>
+            </sld:Displacement>
+            <sld:Rotation>
+              <ogc:Literal>0</ogc:Literal>
+            </sld:Rotation>
+          </sld:PointPlacement>
+        </sld:LabelPlacement>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#111111</sld:CssParameter>
+        </sld:Fill>
+        <sld:VendorOption name="group">true</sld:VendorOption>
+      </sld:TextSymbolizer>
+    </sld:Rule>
+  </sld:FeatureTypeStyle>
+</sld:UserStyle>
